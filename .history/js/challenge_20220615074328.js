@@ -9,6 +9,7 @@ const commentList = document.querySelector("#list");
 let currentNumber = 0;
 let counterRunning = true;
 let likedNumbers = {};
+// { 1: 3, 20: 2 }
 
 // Events
 commentForm.addEventListener("submit", (event) => {
@@ -21,12 +22,11 @@ commentForm.addEventListener("submit", (event) => {
   commentList.append(p);
 
   event.target.reset();
-  
+  // commentForm.reset()
 });
 
 buttonContainer.addEventListener("click", (event) => {
   if (event.target.id === "plus") {
-      //console.log('clicked')
     changeCounter(1);
   } else if (event.target.id === "minus") {
     changeCounter(-1);

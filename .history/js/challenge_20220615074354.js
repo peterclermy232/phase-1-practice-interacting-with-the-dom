@@ -26,7 +26,6 @@ commentForm.addEventListener("submit", (event) => {
 
 buttonContainer.addEventListener("click", (event) => {
   if (event.target.id === "plus") {
-      //console.log('clicked')
     changeCounter(1);
   } else if (event.target.id === "minus") {
     changeCounter(-1);
